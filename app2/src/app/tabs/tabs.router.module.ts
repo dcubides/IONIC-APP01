@@ -12,7 +12,8 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            loadChildren: '../tab1/tab1.module#Tab1PageModule'
+            //loadChildren: '../tab1/tab1.module#Tab1PageModule'
+            loadChildren: '../contact/contact.module#ContactPageModule'
           }
         ]
       },
@@ -31,6 +32,15 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: '../tab3/tab3.module#Tab3PageModule'
+          }
+        ]
+      },
+      {
+        path: 'producto',
+        children: [
+          {
+            path: '',
+            loadChildren: '../product/product.module#ProductPageModule'
           }
         ]
       },
