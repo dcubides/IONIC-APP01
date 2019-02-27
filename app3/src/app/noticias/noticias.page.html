@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Noticias
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-card *ngFor="let noti of noticias">
+        <ion-card-header>
+            <ion-card-subtitle>{{ noti.titulo }}</ion-card-subtitle>
+            <ion-img [src]="noti.urlImg"></ion-img>
+            <ion-card-title>{{ noti.titulo }}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            {{ noti.noticia }}
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>
